@@ -1,9 +1,9 @@
 package sharded
 
 func (c *Cluster) DistributedTrxSnapshot() {
-	c.DistributedTransactions(NewSnapshot(c), "test")
+	c.DistributedTransactions(NewSnapshot(c), "testtrx")
 }
 
 func (c *Cluster) DistributedTrxPhysical() {
-	c.DistributedTransactionsPhys(NewPhysical(c), "test")
+	c.DistributedTransactionsPhys(NewPhysical(c), "testtrx")
 }
